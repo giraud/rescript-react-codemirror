@@ -1,0 +1,31 @@
+{
+    "name": "@giraud/rescript-react-codemirror",
+    "version": "0.0.1",
+    "scripts": {
+        "build": "rescript",
+        "clean": "rescript clean -with-deps",
+        "start": "rescript build -w",
+        "dev": "vite"
+    },
+    "keywords": [
+        "rescript",
+        "codemirror",
+        "react"
+    ],
+    "author": "Hervé Giraud",
+    "license": "MIT",
+    "dependencies": {
+        "@codemirror/basic-setup": "^0.19.1",
+        "@codemirror/state": "^0.19.0",
+        "@codemirror/view": "^0.19.0",
+        "@rescript/react": "^0.10.0",
+        "react": "^17.0.0",
+        "react-dom": "^17.0.0",
+        "react-reconciler": "^0.26.0"
+    },
+    "devDependencies": {
+        "rescript": "*",
+        "@vitejs/plugin-react": "^1.0.0",
+        "vite": "^2.0.0"
+    }
+}

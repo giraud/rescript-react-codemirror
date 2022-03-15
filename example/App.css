@@ -1,0 +1,55 @@
+:root {
+    --color-canvas: 215, 15%, 16%; /* #22272e */
+    --color-menu: #2d333b;
+    --color-border: #8d98a5;
+    --color-text: #cdd9e5;
+    --color-hover: #539bf5;
+    --color-selected: hsl(6, 100%, 64%); /* #ff55847 */
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    font-family: Tahoma, Verdana, Segoe, sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-size: 14px;
+    -webkit-font-smoothing: antialiased;
+    /*background-color: hsla(var(--color-canvas), 1);*/
+}
+
+#root, main {
+    height: 100%;
+}
+
+main {
+    display: grid;
+    grid-template-rows: min-content 1fr;
+    grid-gap: 10px;
+}
+
+.toolbar {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    /*background-color: var(--color-menu);*/
+    border-bottom: 1px solid var(--color-border);
+}
+
+.toolbar a {
+    margin-left: auto;
+    text-align: right;
+    /*color: var(--color-text)*/
+}
+
+.editor {
+    /*color: wheat;*/
+}
